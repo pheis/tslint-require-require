@@ -1,2 +1,10 @@
 const foo = require('foo');
-                    ~~~~~      [Variables named after animals are not allowed!]
+                     ~~~      [File not found]
+
+const asdf = 'asdf'
+
+const foo = require('./test.ts.lint');
+const foo = require('../package.json');
+
+const foo = require('../package.notFound');
+                     ~~~~~~~~~~~~~~~~~~~      [File not found]
