@@ -35,7 +35,7 @@ function walk(ctx: Lint.WalkContext) {
       ctx.addFailure(
         name.getStart(ctx.sourceFile) + 1,
         name.end - 1,
-        Rule.FAILURE_STRING
+        `dir: ${dir}, file: ${base}, joined: ${filePath}`
       );
     }
   }

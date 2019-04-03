@@ -3,8 +3,10 @@ const foo = require('foo');
 
 const asdf = 'asdf'
 
-const foo = require('./test.ts.lint');
-const foo = require('../package.json');
+const test1 = require('./test.ts.lint');
+const test2 = require('../package.json');
 
-const foo = require('../package.notFound');
-                     ~~~~~~~~~~~~~~~~~~~      [File not found]
+const test3 = require('../package.notFound');
+                       ~~~~~~~~~~~~~~~~~~~      [File not found]
+
+const test4 = require('../src/requireRequireRule.ts');
