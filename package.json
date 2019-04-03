@@ -5,8 +5,14 @@
   "description": "Require requires",
   "main": "tslint-require-require.json",
   "scripts": {
+    "build": "tsc",
     "test": "tslint --test test/"
   },
+  "files": [
+    "/rules",
+    "tslint-require-require.json",
+    "package.json"
+  ],
   "author": "Pyry Heiskanen",
   "dependencies": {
     "tsutils": "^2.28.0 || ^3.0.0"
