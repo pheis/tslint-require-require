@@ -49,7 +49,7 @@ function walk(ctx) {
         var dir = path.dirname(ctx.sourceFile.fileName);
         var filePath = path.join(dir, base);
         if (!fs.existsSync(filePath)) {
-            ctx.addFailure(name_1.getStart(ctx.sourceFile) + 1, name_1.end - 1, Rule.FAILURE_STRING);
+            ctx.addFailure(name_1.getStart(ctx.sourceFile) + 1, name_1.end - 1, "dir: " + dir + ", file: " + base + ", joined: " + filePath);
         }
     }
 }
